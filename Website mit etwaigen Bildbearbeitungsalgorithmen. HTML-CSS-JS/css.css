@@ -1,0 +1,176 @@
+
+body{
+	background-color: black;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+#whales{
+	width: 0;
+}
+
+
+
+#myCanvas{
+	padding-left: 50px;
+	padding-bottom: 40px;
+
+}
+
+#histoCan{
+	
+	width:255px;
+	height: 300px;
+	background-color: black;
+
+	margin-left:150px;
+}
+
+#imageLoader {
+	min-width:200px;
+
+  border-radius: 5px;
+  background-color: white;
+  padding: 8px 32px;
+	display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+float:left;
+}
+
+/*Container*/
+#sitecontainer{
+    display: inline-grid;
+    grid-template-columns: 20% 80%;
+	grid-template-rows: 50px 90%;
+	min-width:100%;
+	min-height:100%;
+	overflow: visible;
+}
+
+#Header-Container {
+	display: inline-grid;
+	position: relative;
+	background-color: white;
+	max-width: 420px;
+	min-width: 420px;
+	max-height: 50px;
+	grid-column: 1/2;
+	border: black solid 5px;
+	font-size: 50%;
+	text-align: center;
+	border-radius: 10px;
+  }
+
+#canvascontainer{
+	position: relative;
+	display: inline-grid;
+	grid-column: 2;
+	grid-row: 2;
+	padding-left: 20px;
+}
+
+#controlcontainer{
+	display: inline-grid;
+	grid-template-columns: 100% ;
+	position: relative;
+	max-height:600px;
+	width: 450px;
+	grid-column: 1;
+	grid-row: 2;
+	float:left;
+}
+
+/*Buttons*/
+.button1 {
+	min-height:45px;
+	border-radius: 5px;
+	max-height : 45px;
+	background-color: #4CAF50;
+	max-width: 420px;
+	min-width: 420px;
+	display: inline-block;
+  	text-align: center;
+  	font-size: 16px;
+  	margin: 4px 2px;
+	
+}
+
+.button3 {
+  border-radius: 5px;
+  background-color: white;
+  padding: 8px 32px;
+	display: inline-block;
+  text-align: center;
+  font-size: 10px;
+  margin: 4px 2px;
+		float:left;
+}
+
+.button {
+min-width:200px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 8px 32px;
+	display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+	float:left;
+}
+
+input{
+	margin-top: 15px;
+	max-height: 10px;
+	border-radius:25px;
+	width: 40px;
+	
+}
+
+
+.number1{
+	float: right;
+}
+
+
+
+/*Textformat*/ 
+h1 {
+	margin-top: 15px;
+	font-size: 15px;
+	position: relative;
+	float: left;
+
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	
+}
+
+p{
+	color: white;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+
+/*tooltips*/
+.tooltip1 .tooltiphelp {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip1 {
+
+    font-weight: bolder;
+  position: relative;
+  border-bottom: 1px black;
+}
+
+.tooltip1:hover .tooltiphelp {
+  visibility: visible;
+}
