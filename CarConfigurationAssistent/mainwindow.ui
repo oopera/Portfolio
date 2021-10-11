@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>986</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>720</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>CarConfigurator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="2">
+     <widget class="QGroupBox" name="MiscInfo2">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0" rowspan="2">
+        <widget class="QCheckBox" name="Sofortkauf">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="toolTipDuration">
+          <number>0</number>
+         </property>
+         <property name="text">
+          <string>Sofortkauf</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="GeschaetzeKosten">
+         <property name="text">
+          <string>Geschaetzte Kosten</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLCDNumber" name="Preis2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="value" stdset="0">
+          <double>25000.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QCheckBox" name="Ratenzahlung">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="toolTipDuration">
+          <number>0</number>
+         </property>
+         <property name="text">
+          <string>Ratenzahlung</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="Leasing">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="toolTipDuration">
+          <number>0</number>
+         </property>
+         <property name="text">
+          <string>Leasing</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QTabWidget" name="TechnischeDaten">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>Pflichteingabe</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="KraftstoffTab">
+       <attribute name="title">
+        <string>Kraftstoff</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QCheckBox" name="Benzin">
+          <property name="text">
+           <string>Benzin</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="Diesel">
+          <property name="text">
+           <string>Diesel</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="Hybrid">
+          <property name="text">
+           <string>Hybrid</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="Elektro">
+          <property name="text">
+           <string>Elektro</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="GetriebeTab">
+       <attribute name="title">
+        <string>Getriebe</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QCheckBox" name="GangSchlatgetriebe">
+          <property name="text">
+           <string>6-Gang-Schaltgetriebe</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="GTronic">
+          <property name="text">
+           <string>9-G-Tronic</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="Automatikgetriebe">
+          <property name="text">
+           <string>Automatikgetriebe</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="LeistungTab">
+       <attribute name="title">
+        <string>Leistung</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QCheckBox" name="NeunzigKW">
+          <property name="text">
+           <string>90kW (122PS)</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="HundertfuenfzehnKW">
+          <property name="text">
+           <string>115kW (156PS)</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="HunderatchtzehKW">
+          <property name="text">
+           <string>118kW (160PS)</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="1" rowspan="2">
+     <widget class="QGroupBox" name="DesignAuswahl">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>Pflichteingabe</string>
+      </property>
+      <property name="title">
+       <string>Design-Auswahl</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="Farbe">
+         <property name="text">
+          <string>Farbe</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="FarbAuswahl">
+         <property name="toolTip">
+          <string>Pflichteingabe</string>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Silber</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Schwarz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Rot</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="FarbeZierElemente">
+         <property name="text">
+          <string>Farbe der Zierelemente</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="ZierelementAuswahl">
+         <property name="toolTip">
+          <string>Pflichteingabe</string>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Gold</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Schwarz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Grau</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Sitzbezuege">
+         <property name="text">
+          <string>Sitzbezuege</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="SItzBezugAuswahl">
+         <property name="toolTip">
+          <string>Pflichteingabe</string>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Echtleder</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Kunstleder</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Stoff</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Felgen">
+         <property name="text">
+          <string>Felgen</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="FelgenAuswahl">
+         <property name="toolTip">
+          <string>Pflichteingabe</string>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>18-Zoll Aero</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>19-Zoll Sport</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>21-Zoll</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="Winterreifen">
+         <property name="toolTip">
+          <string>Pflichteingabe</string>
+         </property>
+         <property name="text">
+          <string>Winterreifen</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="Anhaengerkupplung">
+         <property name="toolTip">
+          <string>Pflichteingabe</string>
+         </property>
+         <property name="text">
+          <string>Anhaengerkupplung</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="Sitzheizung">
+         <property name="toolTip">
+          <string>Pflichteingabe</string>
+         </property>
+         <property name="text">
+          <string>Sitzheizung</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>CarStats</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="1" rowspan="3">
+        <widget class="QGroupBox" name="SavedConfig">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>Gespeicherte Konfiguration</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QDateEdit" name="Datum">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::NoButtons</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="ConfigKosten">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Link">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Link zur Konfiguration</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLCDNumber" name="VerbrauchINT">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="value" stdset="0">
+          <double>6.700000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="Verbrauch">
+         <property name="text">
+          <string>Verbrauch pro 100km</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="3">
+     <widget class="QGroupBox" name="ZusatzPakete">
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>Zusätzliche-Pakete</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="SitzkomfortPaketCheckbox">
+         <property name="text">
+          <string>Sitzkomfort-Paket</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="SKPLabel">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>(4-Wege-Lordosenstütze)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="Trennlinie">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="SpiegelPaketCheckbox">
+         <property name="text">
+          <string>Spiegel-Paket</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="SPLabel">
+         <property name="text">
+          <string>(Abblendende Spiegel, Umfeldbeleuchtung)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="Trennlinie2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="AblagePaketCheckbox">
+         <property name="text">
+          <string>Ablage-Paket</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="APLabel">
+         <property name="text">
+          <string>(Cupholder)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="Trennlinie3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="SpurPaketCheckbox_2">
+         <property name="text">
+          <string>Spur-Paket</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="SpurPLabel">
+         <property name="text">
+          <string>(Totwinkel-Assistent, Ausstiegswarner-Assistent, Aktiver
+Spurhalte-Assistent)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="Trennlinie4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="FahrAssistenzPaketCheckbox">
+         <property name="text">
+          <string>Fahr-Assistenz-Paket</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="FAPLabel">
+         <property name="text">
+          <string>(Lenk-Assistent, Aktiver Abstands-Assistent
+DISTRONIC)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>986</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConfigurations">
+    <property name="title">
+     <string>Configurations </string>
+    </property>
+    <addaction name="KonfigurationSpeichern"/>
+    <addaction name="GespeicherteKonfiguration"/>
+   </widget>
+   <addaction name="menuConfigurations"/>
+  </widget>
+  <action name="GespeicherteKonfiguration">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gespeicherte Konfiguration</string>
+   </property>
+  </action>
+  <action name="KonfigurationSpeichern">
+   <property name="text">
+    <string>Konfiguration Speichern</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Elektro</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Automatikgetriebe</receiver>
+   <slot>toggle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>681</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>696</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Elektro</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GTronic</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>681</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>496</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Elektro</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GangSchlatgetriebe</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>681</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>271</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GespeicherteKonfiguration</sender>
+   <signal>triggered()</signal>
+   <receiver>SavedConfig</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>845</x>
+     <y>376</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
